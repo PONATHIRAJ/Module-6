@@ -4,7 +4,12 @@
 ---
 
 ### AIM  
-To write a Python program to create a Parent class `Bird` and inherit two child classes `Sparrow` and `Ostrich` from the `Bird` class with the same method `flight()`. Create an object for each class and call the methods of the class which will print the name of the bird that is flying.
+To write a Python program to create a class  Player with two private attributes name and player number, change the value of the attributes  with getters and setters for both. 
+
+class Player:
+    def __init__(self, name: str, player_number: int):
+        self.__name = name
+        self.__player_number = player_number
 
 ---
 
@@ -34,10 +39,24 @@ To write a Python program to create a Parent class `Bird` and inherit two child 
 ### PROGRAM
 
 ```
-
+class Player:
+    def __init__(self):
+        self.a = 'Betty Ballmer'
+        self.b = 10 
+    def getter(self):
+        print(self.a)
+        print(self.b)
+    def setter(self,a,b):
+        self.a = a
+        self.b = b
+obj = Player()
+obj.getter()
+obj.setter('Buster Ballmer',11)
+obj.getter()
 ```
 
 ### OUTPUT
-
+![image](https://github.com/user-attachments/assets/326eef05-5f61-45cf-bc50-d0039e3b44b2)
 
 ### RESULT
+Thus, the program is executed and verified successfully.
