@@ -26,14 +26,37 @@ To write a Python program to create a class `Student` with the private members `
 ### PROGRAM
 
 ```
+class Student:
+    def __init__(self, name, age):
+        self.name = name         # Public member
+        self.__age = age         # Private member
 
+    # Getter for age
+    def get_age(self):
+        return self.__age
 
+    # Setter for age
+    def set_age(self, age):
+        self.__age = age
+
+    # Method to display the student's details
+    def display(self):
+        print(f"Name: {self.name} {self.__age}")
+
+# Create a Student object
+student = Student("Jessa", 14)
+student.display()
+
+# Update the age using setter
+student.set_age(16)
+student.display()
 
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/f4bc500c-337c-46cf-8dea-e5c551c252e7)
 
-
-### RESULT
+### RESULT 
+Thus, the program is executed and verified successfully. 
 
 
